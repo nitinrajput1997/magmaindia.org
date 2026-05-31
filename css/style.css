@@ -750,7 +750,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/background.png) fixed center center;
+  background: linear-gradient(rgba(30, 0, 55, 0.82), rgba(0, 0, 0, 0.86)), url(../img/background.png) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -759,10 +759,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 #call-to-action p {
   color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 #call-to-action .cta-btn {
@@ -775,9 +777,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 8px 28px;
   border-radius: 25px;
   transition: 0.5s;
-  margin-top: 10px;
+  margin: 10px 8px 0 8px;
   border: 2px solid #fff;
   color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 #call-to-action .cta-btn:hover {
@@ -1323,15 +1327,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-info h3 {
-  font-size: 34px;
+#footer .footer-top .footer-info .footer-logo {
+  display: inline-block;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
   margin: 0 0 20px 0;
-  padding: 2px 0 2px 10px;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  border-left: 4px solid #5602a4;
+  line-height: 0;
+}
+
+#footer .footer-top .footer-info .footer-logo img {
+  max-width: 130px;
+  height: auto;
+  display: block;
 }
 
 #footer .footer-top .footer-info p {
@@ -1452,6 +1460,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
   background: #5602a4;
+}
+
+#footer .footer-disclaimer {
+  border-top: 1px solid #222;
+  padding: 25px 0 5px 0;
+}
+
+#footer .footer-disclaimer h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0 0 18px 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#footer .footer-disclaimer h4::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  background: #5602a4;
+}
+
+#footer .footer-disclaimer p {
+  font-size: 12.5px;
+  line-height: 22px;
+  color: #aaa;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 8px auto;
 }
 
 #footer .copyright {
